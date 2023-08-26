@@ -1,4 +1,4 @@
-# OSM_AG_LIB
+# osmAG LIB
 
 C++ Library of osmAG.
 
