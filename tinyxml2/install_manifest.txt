@@ -1,0 +1,7 @@
+/usr/local/lib/libtinyxml2.a
+/usr/local/lib/cmake/tinyxml2/tinyxml2-static-targets.cmake
+/usr/local/lib/cmake/tinyxml2/tinyxml2-static-targets-noconfig.cmake
+/usr/local/lib/cmake/tinyxml2/tinyxml2-config.cmake
+/usr/local/lib/cmake/tinyxml2/tinyxml2-config-version.cmake
+/usr/local/include/tinyxml2.h
+/usr/local/lib/pkgconfig/tinyxml2.pc

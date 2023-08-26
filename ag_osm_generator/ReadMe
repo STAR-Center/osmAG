@@ -1,0 +1,30 @@
+Before running my code, make sure you have installed these:
+cmake, g++, Eigen3, Qt4, CGAL, PCL
+They can be installed by (Ubuntu): 
+sudo apt-get install g++
+sudo apt-get install cmake
+sudo apt-get install qt4-default
+sudo apt-get install libcgal-dev libcgal-qt5-dev
+PCL (>=1.7.2) (building from source is better, installing with .deb meets some problems):
+https://larrylisky.com/2016/11/03/point-cloud-library-on-ubuntu-16-04-lts/
+Eigen3 can be downloaded from: http://eigen.tuxfamily.org/index.php?title=Main_Page#Download
+Then extract Eigen's source code. 
+Build the Eigen library with command lines: 
+First, cd to the Eigen/ directory 
+mkdir build
+cd build
+cmake ..
+sudo make install
+---
+Now, we can build our map matching code:
+cd /path/to/code/
+mkdir build
+cd build
+cmake ..
+make osm_generate
+./bin/osm_generate MapA.png resolution_of_MapA W(door width + 0.1m) refer_lat refer_lon map_orig_x map_orig_y <denoise_neighbor_size denoise_percentage>
+(example: 
+$ ./bin/osm_generate ../maps/00000_2.png 0.0628 1.9 31.177153641080547 121.59405396734144 0 0 8 0
+$ ./bin/osm_generate ../maps/SIST.png 0.1 1.8 31.177153641080547 121.59405396734144 228 986 8 0)
+
+
